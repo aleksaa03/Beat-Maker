@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+#title {
+  text-align: center;
+  padding-top: 100px;
+}
+.main {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+.main h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+.main h3 {
+  text-align: center;
+}
+.main input[type="checkbox"] {
+  margin: 10px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.main .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.main .options button,
+.options input[type="number"] {
+  margin: 0 5px;
+}
+.main .options button {
+  height: 40px;
+  width: 90px;
+  background: #2ecc71;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: 0.25s;
+  outline: none;
+  cursor: pointer;
+}
+.main .options button:hover {
+  background: #27ae60;
+}
+.main .options button:disabled {
+  background: #ebe9ed;
+  cursor: default;
+}
+.main .options input[type="number"] {
+  height: 40px;
+  width: 90px;
+  padding: 0 5px;
+  font-size: 15px;
+  border: 1.5px solid #ebe9ed;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.25s;
+}
+.main .options input[type="number"]:focus {
+  border: 1.5px solid #2ecc71;
+}
+.main .row-1,
+.row-2,
+.row-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
