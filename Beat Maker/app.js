@@ -5,11 +5,22 @@ var interval;
 
 var output = document.getElementById("output");
 var playButton = document.getElementById("play-button");
+var rows = document.querySelectorAll(".row");
+
+for (var i = 0; i < rows.length; i++) {
+  rows[i].innerHTML += `
+    <input type="checkbox" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <input type="checkbox" name="" id="" />`;
+}
 
 function start(status) {
   if (status) {
     interval = setInterval(playBeatMaker, seconds);
-    console.log(seconds);
     playButton.disabled = true;
   } else {
     clearInterval(interval);
@@ -46,7 +57,7 @@ function playBeatMaker() {
 
 function beatIntervalSeconds(e) {
   var inputValue = e.target.value;
-  if (inputValue != "" || inputValue > -1) {
+  if (inputValue != "" && inputValue > -1) {
     seconds = inputValue * 1000;
   } else {
     seconds = 0.4 * 1000;

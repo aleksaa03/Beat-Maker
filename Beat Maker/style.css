@@ -69,9 +69,17 @@
   border: 1.5px solid #2ecc71;
 }
 .main .row-1,
-.row-2,
-.row-3 {
+.main .row-2,
+.main .row-3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main select {
+  height: 30px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  cursor: pointer;
 }
