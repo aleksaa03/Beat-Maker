@@ -12,11 +12,17 @@
   <body>
     <h1 id="title">Beat Maker</h1>
     <div class="main">
-      <h3>Kick-Slapback</h3>
+      <select name="" id="" class="select-beat" oninput="changeBeat(event, 0)">
+        <option value="kick-slapback">Kick-Slapback</option>
+      </select>
       <div class="row-1 row"></div>
-      <h3>Kick-Electro</h3>
+      <select name="" id="" class="select-beat" oninput="changeBeat(event, 1)">
+        <option value="kick-electro">Kick-Electro</option>
+      </select>
       <div class="row-2 row"></div>
-      <h3>Snare-Electro</h3>
+      <select name="" id="" class="select-beat" oninput="changeBeat(event, 2)">
+        <option value="snare-electro">Snare-Electro</option>
+      </select>
       <div class="row-3 row"></div>
       <div class="options">
         <button onclick="start(true)" id="play-button">Play</button>

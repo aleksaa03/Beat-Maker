@@ -18,8 +18,13 @@
   text-align: center;
   margin: 10px 0;
 }
-.main h3 {
-  text-align: center;
+.main select {
+  height: 30px;
+  width: 150px;
+  display: block;
+  margin: 5px auto;
+  outline: none;
+  cursor: pointer;
 }
 .main input[type="checkbox"] {
   margin: 10px;
@@ -74,12 +79,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main select {
-  height: 30px;
-  width: 150px;
-  display: block;
-  margin: 0 auto;
-  outline: none;
-  cursor: pointer;
 }
